@@ -123,15 +123,15 @@ document.getElementById('reappearButton').onclick = function(){
 </script>
 
 
-<h2>What's your favorite color? </h2>
+<h2>What's your name? (Change this so it says: I like that name.)</h2>
 Name:
-<input id="colorBox">
-<input type="button" value="enter" id="colorButton">
-<span id="colorResponse"></span>
+<input id="nameBox">
+<input type="button" value="enter" id="nameButton">
+<span id="nameResponse"></span>
 <script>
-document.getElementById('colorButton').onclick = function(){
-  name = document.getElementById('colorBox').value
-  document.getElementById('nameResponse').textContent = color + '! I like that color!'
+document.getElementById('nameButton').onclick = function(){
+  name = document.getElementById('nameBox').value
+  document.getElementById('nameResponse').textContent = 'Hi, ' + name + '! That\'s a good name! I like that name!'
 }
 </script>
 
@@ -145,7 +145,16 @@ document.getElementById('colorResponse').style.color = 'blue'
 </script>
 
 <h2>What's your favorite color? (Can you make a box that asks what your favorite color is?)</h2>
-
+Color:
+<input id="colorBox">
+<input type="button" value="enter" id="colorButton">
+<span id="nameResponse"></span>
+<script>
+document.getElementById('colorButton').onclick = function(){
+  name = document.getElementById('colorBox').value
+  document.getElementById('colorResponse').textContent = 'color + '! 'I like that color!'
+}
+</script>
 
 
 <h2>Is your number bigger than 5? (Can you change this to smaller?)</h2>
