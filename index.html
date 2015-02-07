@@ -264,12 +264,12 @@ document.getElementById('recallButton').onclick = function(){
 <script>
 if (new Date() - location.search.substr(1) > 1000) location.href = location.pathname + '?' + new Date() * 1
 </script>
-<h2>Basic addition</h2>
-<input value="1" id="addBox1">
-plus
-<input value="2" id="addBox2">
-<input type="button" value="equals" id="addButton">
-<span id="addResult"></span>
+<h2>Basic subtract</h2>
+<input value="1" id="subtractBox1">
+-
+<input value="2" id="subtractBox2">
+<input type="button" value="equals" id="subtractButton">
+<span id="subtractResult"></span>
 <script>
 document.getElementById('subtractButton').onclick = function(){
   // Get numbers from the two boxes.
